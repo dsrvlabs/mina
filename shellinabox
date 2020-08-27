@@ -4,7 +4,7 @@ SHELLINABOX_DAEMON_START=1
 # TCP port that shellinboxd's webserver listens on
 SHELLINABOX_PORT=6175
 # specify the IP address of a destination SSH server
-SHELLINABOX_ARGS="--disable-ssl -s /:SSH:127.0.0.1"
+SHELLINABOX_ARGS="--no-beep --css /root/wob.css --disable-ssl -s /:SSH:127.0.0.1"
 
 # Parameters that are managed by the system and usually should not need
 # changing:
