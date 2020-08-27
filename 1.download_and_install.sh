@@ -1,0 +1,1 @@
+echo "deb [trusted=yes] http://packages.o1test.net stable main" | sudo tee /etc/apt/sources.list.d/coda.list && sudo apt update && sudo apt install -t stable coda-testnet-postake-medium-curves=0.0.11-beta1+315383-release-0.0.12-beta-493b4c6-PV13ea18ef -y
