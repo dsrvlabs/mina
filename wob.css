@@ -25,7 +25,7 @@
 }
 */
 #vt100 .ansiDef {
-  color:            #ffffff;
+  color:            #cccccc;
 }
 
 #vt100 .ansiDefR {
@@ -37,7 +37,6 @@
 }
 
 #vt100 .bgAnsiDefR {
-  background-color: #ffffff;
 }
 
 #vt100 #scrollable.inverted .ansiDef {
