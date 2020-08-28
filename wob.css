@@ -8,7 +8,7 @@
   opacity:          0.2;
   -moz-opacity:     0.2;
   filter:           alpha(opacity=20);
-}*/
+}
 
 #vt100 #scrollable {
   color:            #ffffff;
@@ -23,7 +23,7 @@
   opacity:          0.2;
   -moz-opacity:     0.2;
 }
-
+*/
 #vt100 .ansiDef {
   color:            #ffffff;
 }
@@ -44,7 +44,7 @@
   color:            #000000;
 
 }
-
+/*
 #vt100 #scrollable.inverted .ansiDefR {
   color:            #ffffff;
    opacity:          0.2;
@@ -62,7 +62,7 @@
    opacity:          0.2;
   -moz-opacity:     0.2;
 }
-
+*/
 body {
  background-image: url("https://user-images.githubusercontent.com/21022937/87610675-f6c28900-c740-11ea-8446-a2cf1ddde1a5.png");
  background-color: #cccccc;
