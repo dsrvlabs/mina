@@ -42,18 +42,26 @@
 
 #vt100 #scrollable.inverted .ansiDef {
   color:            #000000;
+   opacity:          0.2;
+  -moz-opacity:     0.2;
 }
 
 #vt100 #scrollable.inverted .ansiDefR {
   color:            #ffffff;
+   opacity:          0.2;
+  -moz-opacity:     0.2;
 }
 
-#vt100 #scrollable.inverted .bgAnsiDef {
+#vt100 #scrollable.inverted .b
+ opacity:          0.2;
+  -moz-opacity:     0.2;gAnsiDef {
   background-color: #ffffff;
 }
 
 #vt100 #scrollable.inverted .bgAnsiDefR {
   background-color: #000000;
+   opacity:          0.2;
+  -moz-opacity:     0.2;
 }
 
 body {
