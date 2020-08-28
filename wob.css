@@ -33,7 +33,6 @@
 }
 
 #vt100 .bgAnsiDef {
-  background-color: #000000;
 }
 
 #vt100 .bgAnsiDefR {
@@ -67,6 +66,6 @@ body {
  background-color: #cccccc;
  background-repeat: no-repeat;
  background-position: right top;
- background-size: 200px;
+ background-size: 220px;
  background-color: #282828;
 }
