@@ -9,11 +9,23 @@ https://www.dsrvlabs.com/en/iaas.html
 
 ### 2. Access to your node with link in e-mail recieved.
 Click & Login with your ID & Password.
+Run initial script.
+```
+$./0.update_scripts.sh
+```
 
 ### 3. Create your keypair
 ```
 $coda-generate-keypair-phase3 -privkey-path keys/my-wallet
 ```
+simple version:
+```
+$./1.generate_key.sh
+```
+
+echo 'export $CODA_PK=<YOUR_PK>' >> ~/.bashrc 
+source ~/.bashrc
+
 *helpful link: https://forums.codaprotocol.com/t/testnet-beta-phase-3-staking-signups/225*
 
 ### 4.  Fill this form to join coda testnet beta phase3
@@ -25,16 +37,9 @@ Join Coda official channel:
 
 
 ### 6. Install latest binary & run
-
+When testnet starting, doing below.
 ```
-rm *.sh
-
-wget https://raw.githubusercontent.com/dsrvlabs/coda/master/1.download_and_install.sh
-wget https://raw.githubusercontent.com/dsrvlabs/coda/master/2.run_coda_node.sh
-
-chomod *.sh
-
-$./1.download_and_install.sh
-$./2.run_coda_node.sh
+$./0.update_scripts.sh
+$./2.download_and_install.sh
+$./3.run_coda_node.sh 
 ```
-*You can use same command to update binary!*
