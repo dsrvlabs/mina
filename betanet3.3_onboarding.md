@@ -22,9 +22,13 @@ simple version:
 ```
 $./1.generate_key.sh
 ```
-
+After key genenration, Update your key into environment file
+```
 echo 'export $CODA_PK=<YOUR_PK>' >> ~/.bashrc 
 source ~/.bashrc
+```
+
+
 
 *helpful link: https://forums.codaprotocol.com/t/testnet-beta-phase-3-staking-signups/225*
 
