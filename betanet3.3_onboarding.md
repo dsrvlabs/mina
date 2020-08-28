@@ -1,3 +1,7 @@
+# Join Coda testnet beta3 with DSRV!
+
+![enter image description here](https://user-images.githubusercontent.com/21022937/87610675-f6c28900-c740-11ea-8446-a2cf1ddde1a5.png)
+
 ### 1. Create your node 
 https://www.dsrvlabs.com/en/iaas.html
 1. Enter your e-mail address & click coda button
