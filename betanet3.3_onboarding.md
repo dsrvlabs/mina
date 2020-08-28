@@ -26,7 +26,7 @@ Join Coda official channel:
 
 ### 6. Install latest binary & run
 
-``
+```
 rm *.sh
 
 wget https://raw.githubusercontent.com/dsrvlabs/coda/master/1.download_and_install.sh
@@ -36,6 +36,5 @@ chomod *.sh
 
 $./1.download_and_install.sh
 $./2.run_coda_node.sh
-``
-
- *You can use same command to update binary!*
+```
+*You can use same command to update binary!*
