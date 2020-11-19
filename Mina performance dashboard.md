@@ -36,7 +36,7 @@ Prometheus enables you to monitor all of the "MINA blockchain" related statistic
 ```
 coda daemon -peer-list-file ~/peers.txt \
   -block-producer-key ~/keys/my-wallet \
-  -block-producer-password "password" \
+  -block-producer-password "YOUR PASSWORD HERE" \
   -generate-genesis-proof true \
   -metrics-port 6060
 ```
