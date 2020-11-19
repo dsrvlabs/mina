@@ -30,18 +30,21 @@ You can start by clicking this link: https://forms.gle/VQPzKvoZpK5jud838 (Please
 
 ## 1. Enable prometheus option
 Prometheus enables you to monitor all of the "MINA blockchain" related statistics.
-- Include the option to enable your mina node to send the informaiton to performance dashboard with this flag: `--metrics-port 6060` (강조)
+- Include the option to enable your mina node to send the informaiton to performance dashboard with this flag: `-metrics-port 6060`
 
   - Daemon sample code :
 ```
-coda daemon -peer-list-file ~/peers.txt -block-producer-key ~/keys/my-wallet -block-producer-password "password" -generate-genesis-proof true --metrics-port 6060
+coda daemon -peer-list-file ~/peers.txt \
+  -block-producer-key ~/keys/my-wallet \
+  -block-producer-password "password" \
+  -generate-genesis-proof true \
+  -metrics-port 6060
 ```
 
   - Docker sample code :
 ```
 sudo docker run --name mina -d \
 -p 8301-8305:8301-8305 \
---publish 3085:3085 \
 --metrics-port 6060 \
 --restart=always \
 --mount "type=bind,source=`pwd`/keys,dst=/keys,readonly" \
