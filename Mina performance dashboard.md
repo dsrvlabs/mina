@@ -20,7 +20,7 @@ Mina community members can use our service for FREE and better run & operate nod
 We will start providing our service from testnet 4.1 and so on (in the mainnet as well of course) and would have a seperate website for any mina community member to submit their application.
 Unfortunately, we would have to receive your application via google form just for testnet 4.1, until our platform is ready. (We are preparing something all mina community members would LOVE SO MUCH!!)
 Sign up right now to enjoy our service, we will send you your own personal ID and password to access the performance dashboard.
-You can start by clicking this link (https://forms.gle/VQPzKvoZpK5jud838).
+You can start by clicking this link: https://forms.gle/VQPzKvoZpK5jud838 (Please click the right button and open in a new tab).
 
 ## Step by step guide
 1. Enable prometheus option
