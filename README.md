@@ -5,7 +5,6 @@
 
 **Contributions**
 
-related link: https://github.com/MinaProtocol/mina-grants
 
 - *Block Producer Performance Dashboard*
 Contributor: DSRV
