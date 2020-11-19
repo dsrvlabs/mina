@@ -45,6 +45,7 @@ coda daemon -peer-list-file ~/peers.txt \
 ```
 sudo docker run --name mina -d \
 -p 8301-8305:8301-8305 \
+-p 6060:6060 \
 --restart=always \
 --mount "type=bind,source=`pwd`/keys,dst=/keys,readonly" \
 --mount "type=bind,source=`pwd`/.coda-config,dst=/root/.coda-config" \
