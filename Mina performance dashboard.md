@@ -57,7 +57,7 @@ minaprotocol/mina-daemon-baked:4.1-turbo-pickles-mina757342b-auto811bf26 daemon 
 -log-level Info \
 -metrics-port 6060
 ```
-- How to check: http://{$YOUR_NODE_IP_ADDRESS}:6060
+- How to check: http://{$YOUR_NODE_IP_ADDRESS}:6060/metrics
 
 ## 2. Install node exporter
 The node exporter allows you to monitor all of the "System" related statistics (source: https://github.com/prometheus/node_exporter#using-docker)
