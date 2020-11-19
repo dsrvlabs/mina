@@ -60,8 +60,8 @@ minaprotocol/mina-daemon-baked:4.1-turbo-pickles-mina757342b-auto811bf26 daemon 
 ```
 - How to check: http://YOUR_NODE_IP_ADDRESS:6060/metrics
 - Key settings
-chmod 700 ~/keys
-chmod 600 ~/keys/my-wallet
+1. chmod 700 ~/keys
+2. chmod 600 ~/keys/my-wallet
 
   - Systemd sample coda:
   ```
@@ -75,9 +75,8 @@ chmod 600 ~/keys/my-wallet
   systemctl --user daemon-reload
   systemctl --user start mina
   
-  journalctl --user -u mina -n 1000 -f
-  
- ```
+  journalctl --user -u mina -n 1000 -f 
+  ```
 
 ## 2. Install node exporter
 The node exporter allows you to monitor all of the "System" related statistics (source: https://github.com/prometheus/node_exporter#using-docker)
