@@ -1,10 +1,8 @@
 # Mina
 
-**Genesis Founding member**
+**Genesis Founding Member & Testnet MVP**
 
-![enter image description here](https://user-images.githubusercontent.com/21022937/87610675-f6c28900-c740-11ea-8446-a2cf1ddde1a5.png)
-
-**GRANTS**
+**ContributionS**
 related link: https://github.com/MinaProtocol/mina-grants
 
 - *Block Producer Performance Dashboard*
