@@ -2,7 +2,9 @@
 
 **Genesis Founding Member & Testnet MVP**
 
-**ContributionS**
+
+**Contributions**
+
 related link: https://github.com/MinaProtocol/mina-grants
 
 - *Block Producer Performance Dashboard*
