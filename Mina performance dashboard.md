@@ -63,7 +63,7 @@ minaprotocol/mina-daemon-baked:4.1-turbo-pickles-mina757342b-auto811bf26 daemon 
 1. chmod 700 ~/keys
 2. chmod 600 ~/keys/my-wallet
 
-  - Systemd sample coda:
+  - Systemd sample code:
   ```
   sudo nano .mina-env
   
