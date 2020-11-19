@@ -58,7 +58,7 @@ minaprotocol/mina-daemon-baked:4.1-turbo-pickles-mina757342b-auto811bf26 daemon 
 -log-level Info \
 -metrics-port 6060
 ```
-- How to check: http://{$YOUR_NODE_IP_ADDRESS}:6060/metrics
+- How to check: http://YOUR_NODE_IP_ADDRESS:6060/metrics
 
 ## 2. Install node exporter
 The node exporter allows you to monitor all of the "System" related statistics (source: https://github.com/prometheus/node_exporter#using-docker)
@@ -71,7 +71,7 @@ docker run -d \
   quay.io/prometheus/node-exporter \
   --path.rootfs=/host
  ```
-- How to check : http://NODE_IP_ADDRESS:9100/metrics
+- How to check : http://YOUR_NODE_IP_ADDRESS:9100/metrics
 
 ## 3. Open ports for prometheus server and node exporter (Firewall settings configuration)
 - TCP Port 6060 (from 101.101.216.236) : mina daemon metrics port
