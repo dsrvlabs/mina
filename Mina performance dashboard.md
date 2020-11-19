@@ -22,8 +22,6 @@ Unfortunately, we would have to receive your application via google form just fo
 Sign up right now to enjoy our service, we will send you your own personal ID and password to access the performance dashboard.
 You can start by clicking this link (https://forms.gle/VQPzKvoZpK5jud838).
 
-# MINA performance dashboard application: https://forms.gle/VQPzKvoZpK5jud838
-
 ## Step by step guide
 1. Enable prometheus option
 2. Install node exporter
@@ -35,12 +33,12 @@ Prometheus enables you to monitor all of the "MINA blockchain" related statistic
 - Include the option to enable your mina node to send the informaiton to performance dashboard with this flag: `--metrics-port 6060` (강조)
 
   - Daemon sample code :
-'''
+```
 coda daemon -peer-list-file ~/peers.txt -block-producer-key ~/keys/my-wallet -block-producer-password "password" -generate-genesis-proof true --metrics-port 6060
-'''
+```
 
   - Docker sample code :
-'''
+```
 sudo docker run --name mina -d \
 -p 8301-8305:8301-8305 \
 --publish 3085:3085 \
@@ -55,18 +53,20 @@ minaprotocol/mina-daemon-baked:4.1-turbo-pickles-mina757342b-auto811bf26 daemon 
 -block-producer-password "YOUR PASSWORD HERE" \
 -insecure-rest-server \
 -log-level Info
-'''
+```
 - How to check: http://{$YOUR_NODE_IP_ADDRESS}:6060
 
 ## 2. Install node exporter
 The node exporter allows you to monitor all of the "System" related statistics (source: https://github.com/prometheus/node_exporter#using-docker)
 - Command (You need to run a seperate docker container for node exporter) :
+```
 docker run -d \
   --net="host" \
   --pid="host" \
   -v "/:/host:ro,rslave" \
   quay.io/prometheus/node-exporter \
   --path.rootfs=/host
+ ```
 - How to check : http://NODE_IP_ADDRESS:9100/metrics
 
 ## 3. Open ports for prometheus server and node exporter (Firewall settings configuration)
