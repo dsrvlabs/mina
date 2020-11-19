@@ -11,7 +11,7 @@ In a single screen, the dashboard shows you the node uptime, current operational
 And all of this amazing features will be presented to mina community members in testnet 4.1 for FREE.
 
 ## Why should I use it?
-Mina performance dashboard is an open-sourced project and anyone can visit the repository at the link (here), follow the setup instructions and run their own hosting server.
+Mina performance dashboard is an open-sourced project and anyone can visit the repository at the link (https://github.com/dsrvlabs/mina-performance-dashboard), follow the setup instructions and run their own hosting server.
 However, running a monitoring server in addition to your block producer & snarker node is a very huge burden both in terms of time and money.
 As a team for developing the dashboard, DSRV would like to share our technical and operational knowledge with community members and help you to better run your own node.
 Mina community members can use our service for FREE and better run & operate nodes to produce more blocks and snarks! 
@@ -20,9 +20,9 @@ Mina community members can use our service for FREE and better run & operate nod
 We will start providing our service from testnet 4.1 and so on (in the mainnet as well of course) and would have a seperate website for any mina community member to submit their application.
 Unfortunately, we would have to receive your application via google form just for testnet 4.1, until our platform is ready. (We are preparing something all mina community members would LOVE SO MUCH!!)
 Sign up right now to enjoy our service, we will send you your own personal ID and password to access the performance dashboard.
-You can start by clicking this link (here).
+You can start by clicking this link (https://forms.gle/VQPzKvoZpK5jud838).
 
-# MINA performance dashboard application URL: ()
+# MINA performance dashboard application: https://forms.gle/VQPzKvoZpK5jud838
 
 ## Step by step guide
 1. Enable prometheus option
@@ -33,8 +33,29 @@ You can start by clicking this link (here).
 ## 1. Enable prometheus option
 Prometheus enables you to monitor all of the "MINA blockchain" related statistics.
 - Include the option to enable your mina node to send the informaiton to performance dashboard with this flag: `--metrics-port 6060` (강조)
-  - Daemon sample code : mina daemon --metrics-port 6060 -peer @SEED1 -block-producer-pubkey $MINA_PUBLIC_KEY
-  - Docker sample code : sudo docker run --publish 3085:3085 -d --name coda --metrics-port 6060 codaprotocol/coda-demo:sandbox-32a.1
+
+  - Daemon sample code :
+'''
+coda daemon -peer-list-file ~/peers.txt -block-producer-key ~/keys/my-wallet -block-producer-password "password" -generate-genesis-proof true --metrics-port 6060
+'''
+
+  - Docker sample code :
+'''
+sudo docker run --name mina -d \
+-p 8301-8305:8301-8305 \
+--publish 3085:3085 \
+--metrics-port 6060 \
+--restart=always \
+--mount "type=bind,source=`pwd`/keys,dst=/keys,readonly" \
+--mount "type=bind,source=`pwd`/.coda-config,dst=/root/.coda-config" \
+--mount type=bind,source="`pwd`/peers.txt,dst=/root/peers.txt",readonly \
+minaprotocol/mina-daemon-baked:4.1-turbo-pickles-mina757342b-auto811bf26 daemon \
+-peer-list-file /root/peers.txt \
+-block-producer-key /keys/my-wallet \
+-block-producer-password "YOUR PASSWORD HERE" \
+-insecure-rest-server \
+-log-level Info
+'''
 - How to check: http://{$YOUR_NODE_IP_ADDRESS}:6060
 
 ## 2. Install node exporter
@@ -53,7 +74,7 @@ docker run -d \
 - TCP Port 9100 (from 101.101.216.236) : node_exporter port
 
 ## 4. Fill in the google form
-- URL : xxxxxxxxx
+- URL : https://forms.gle/VQPzKvoZpK5jud838
 (We DO NOT use your email and private information other than servicing purposes and DSRV does not collect, store or share your personal information to 3rd party)
 (All of the information will be deleted immediately after the testnet period.)
 
@@ -63,4 +84,4 @@ docker run -d \
 - Discord : MINA Discord > Performance dashboard
 @Jongkwang @Seok Hyun (Danny) will be happy to help you out.
 
-Thank you and happy Mina-ing! 
+Thank you and happy stakinging! 
