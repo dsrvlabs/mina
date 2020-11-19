@@ -45,7 +45,6 @@ coda daemon -peer-list-file ~/peers.txt \
 ```
 sudo docker run --name mina -d \
 -p 8301-8305:8301-8305 \
---metrics-port 6060 \
 --restart=always \
 --mount "type=bind,source=`pwd`/keys,dst=/keys,readonly" \
 --mount "type=bind,source=`pwd`/.coda-config,dst=/root/.coda-config" \
@@ -55,7 +54,8 @@ minaprotocol/mina-daemon-baked:4.1-turbo-pickles-mina757342b-auto811bf26 daemon 
 -block-producer-key /keys/my-wallet \
 -block-producer-password "YOUR PASSWORD HERE" \
 -insecure-rest-server \
--log-level Info
+-log-level Info \
+-metrics-port 6060
 ```
 - How to check: http://{$YOUR_NODE_IP_ADDRESS}:6060
 
