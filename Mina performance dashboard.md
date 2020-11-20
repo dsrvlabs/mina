@@ -1,5 +1,7 @@
 ## MINA NODE PERFORMANCE DASHBOARD OPEN!!
 
+<img src="https://user-images.githubusercontent.com/897510/92995078-f1b06900-f53a-11ea-962d-8b78c9c6de88.png">
+
 Hello everyone! We are extremely excited to present our Mina node performance dashboard to all of mina community members.
 We are DSRV, a validator and blockchain infrastructure provider based in South Korea. As a cohort 1 genesis founding member and testnet MVP of Mina, we have been making technical & community contributions since the start of Mina protocol.  
 As part of our contribution, we built an essential tool for node management and monitoring at Mina protocol and would like to introduce to all of you :)
