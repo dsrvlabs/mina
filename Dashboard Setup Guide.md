@@ -9,7 +9,7 @@
 Prometheus enables you to monitor all of the "MINA blockchain" related statistics.
 Include the option to enable your mina node to send the informaiton to performance dashboard with this flag: `-metrics-port 6060`
 
-  1. Daemon
+  1. __Daemon__
 ```
 coda daemon -peer-list-file ~/peers.txt \
   -block-producer-key ~/keys/my-wallet \
@@ -18,7 +18,7 @@ coda daemon -peer-list-file ~/peers.txt \
   -metrics-port 6060
 ```
 
-  2. Docker
+  2. __Docker__
 ```
 sudo docker run --name mina -d \
 -p 8301-8305:8301-8305 \
@@ -37,19 +37,27 @@ minaprotocol/mina-daemon-baked:4.1-turbo-pickles-mina757342b-auto811bf26 daemon 
 ```
 
  Please don't forget to finish key settings before running docker  
-    1. chmod 700 ~/keys  
-    2. chmod 600 ~/keys/my-wallet  
+    * chmod 700 ~/keys  
+    * chmod 600 ~/keys/my-wallet  
 
-  3. Systemd  
-    i. Make .mina-env file: sudo nano .mina-env  
-    ii. Copy and paste the contents below with your password typed  
+  3. __Systemd__  
+  
+  
+    1. Make .mina-env file: sudo nano .mina-env  
+    
+    
+    1. Copy and paste the contents below with your password typed  
     CODA_PRIVKEY_PASS="your password here"
     EXTRA_FLAGS="-metrics-port 6060"  
     [Exit with ctrl+x]  
-    iii. Reload daemon and start mina  
+    
+    
+    1. Reload daemon and start mina  
     systemctl --user daemon-reload
     systemctl --user start mina  
-    iv. Check your logs whether the service is working  
+    
+    
+    1. Check your logs whether the service is working  
     journalctl --user -u mina -n 1000 -f 
   
 
