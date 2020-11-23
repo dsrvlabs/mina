@@ -37,7 +37,7 @@ You can start by clicking this link: https://forms.gle/VQPzKvoZpK5jud838 (Please
 
 - *Block Producer Performance Dashboard*
 
-  - Link : https://forms.gle/VQPzKvoZpK5jud838
+  - Link : https://github.com/dsrvlabs/mina-performance-dashboard
 
   - Application: https://forms.gle/FAPoEZTC8GS4XjVv9
 
