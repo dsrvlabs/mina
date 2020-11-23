@@ -1,4 +1,4 @@
-## Step-by-step guide to setup and access node dashboard
+# Step-by-step guide to setup and access node dashboard
 
 1. Enable prometheus option
 2. Install node exporter
@@ -36,20 +36,20 @@ minaprotocol/mina-daemon-baked:4.1-turbo-pickles-mina757342b-auto811bf26 daemon 
 -metrics-port 6060
 ```
 
- Please don't forget to finish key settings before running docker
-    1. chmod 700 ~/keys
-    2. chmod 600 ~/keys/my-wallet
+ Please don't forget to finish key settings before running docker  
+    1. chmod 700 ~/keys  
+    2. chmod 600 ~/keys/my-wallet  
 
-  3. Systemd
-    i. Make .mina-env file: sudo nano .mina-env
-    ii. Copy and paste the contents below with your password typed
+  3. Systemd  
+    i. Make .mina-env file: sudo nano .mina-env  
+    ii. Copy and paste the contents below with your password typed  
     CODA_PRIVKEY_PASS="your password here"
-    EXTRA_FLAGS="-metrics-port 6060"
-    [Exit with ctrl+x]
-    iii. Reload daemon and start mina
+    EXTRA_FLAGS="-metrics-port 6060"  
+    [Exit with ctrl+x]  
+    iii. Reload daemon and start mina  
     systemctl --user daemon-reload
-    systemctl --user start mina
-    iv. Check your logs whether the service is working
+    systemctl --user start mina  
+    iv. Check your logs whether the service is working  
     journalctl --user -u mina -n 1000 -f 
   
 
