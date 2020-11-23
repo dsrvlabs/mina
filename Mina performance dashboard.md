@@ -106,7 +106,7 @@ docker run -d \
 ## What next?
 - You will receiver the URL for the dashboard website along with your own personal ID and Password.
 - If you have any technical problems or questions, feel free to reach out  at contact@dsrvlabs.com or at the discord channel.
-- Discord : MINA Discord > Performance dashboard
+- Discord : MINA Discord > Node dashboard
 @Jongkwang @Seok Hyun (Danny) will be happy to help you out.
 
-Thank you and happy stakinging! 
+Thank you and happy staking! 
