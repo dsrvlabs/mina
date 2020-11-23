@@ -1,4 +1,4 @@
-## Step by step guide to setup and access node dashboard
+## Step-by-step guide to setup and access node dashboard
 
 1. Enable prometheus option
 2. Install node exporter
@@ -7,7 +7,7 @@
 
 ## 1. Enable prometheus option
 Prometheus enables you to monitor all of the "MINA blockchain" related statistics.
-- Include the option to enable your mina node to send the informaiton to performance dashboard with this flag: `-metrics-port 6060`
+Include the option to enable your mina node to send the informaiton to performance dashboard with this flag: `-metrics-port 6060`
 
   1. Daemon:
 ```
@@ -36,33 +36,32 @@ minaprotocol/mina-daemon-baked:4.1-turbo-pickles-mina757342b-auto811bf26 daemon 
 -metrics-port 6060
 ```
 
-- Please don't forget to finish key settings before running docker
+ Please don't forget to finish key settings before running docker
     1. chmod 700 ~/keys
     2. chmod 600 ~/keys/my-wallet
 
-  - Systemd:
+  3. Systemd:
+    1. Make .mina-env file
+    ```
+    sudo nano .mina-env
+    ```
+    2. Copy and paste the contents below with your password typed.
+    ```
+    CODA_PRIVKEY_PASS="your password here"
+    EXTRA_FLAGS="-metrics-port 6060"
+    ```
+    [Exit with ctrl+x]
 
-  1. Make .mina-env file
-  ```
-  sudo nano .mina-env
-  ```
-  2. Copy and paste the contents below with your password typed.
-  ```
-  CODA_PRIVKEY_PASS="your password here"
-  EXTRA_FLAGS="-metrics-port 6060"
-  ```
-  [Exit with ctrl+x]
-  
-  3. Reload daemon and start mina
-  ```
-  systemctl --user daemon-reload
-  systemctl --user start mina
-  ```
-  
-  4. Check your logs whether the service is working
-  ```
-  journalctl --user -u mina -n 1000 -f 
-  ```
+    3. Reload daemon and start mina
+    ```
+    systemctl --user daemon-reload
+    systemctl --user start mina
+    ```
+
+    4. Check your logs whether the service is working
+    ```
+    journalctl --user -u mina -n 1000 -f 
+    ```
 
 - How to check whether your metrics port is open: http://YOUR_NODE_IP_ADDRESS:6060/metrics
 
