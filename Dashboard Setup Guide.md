@@ -37,27 +37,28 @@ minaprotocol/mina-daemon-baked:4.1-turbo-pickles-mina757342b-auto811bf26 daemon 
 ```
 
    Please don't forget to finish key settings before running docker  
-    *chmod 700 ~/keys  
-    *chmod 600 ~/keys/my-wallet  
+    chmod 700 ~/keys  
+    chmod 600 ~/keys/my-wallet  
 
   3. __Systemd__  
   
   
     1. Make .mina-env file: sudo nano .mina-env  
     
-    
     2. Copy and paste the contents below with your password typed  
+    
     CODA_PRIVKEY_PASS="your password here"
-    EXTRA_FLAGS="-metrics-port 6060"  
+    EXTRA_FLAGS="-metrics-port 6060" 
+    
     [Exit with ctrl+x]  
     
-    
     3. Reload daemon and start mina  
+    
     systemctl --user daemon-reload
     systemctl --user start mina  
     
-    
     4. Check your logs whether the service is working  
+    
     journalctl --user -u mina -n 1000 -f 
   
 
