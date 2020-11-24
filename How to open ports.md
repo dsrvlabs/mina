@@ -3,9 +3,9 @@
 ## Google Cloud Platform
 
 <img src="https://app.dsrvlabs.com/images/git/img_google01.png">
-1. Click the Menu button in the top left corner
-    
-    
+1. Click the Menu button in the top left corner  
+
+
 2-1. Select "VPC network" menu
     
     
