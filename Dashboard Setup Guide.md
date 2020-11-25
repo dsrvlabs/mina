@@ -8,6 +8,8 @@
 ## 1. Enable prometheus option
 Prometheus enables you to monitor all of the "MINA blockchain" related statistics.
 Include the option to enable your mina node to send the informaiton to performance dashboard with this flag: `-metrics-port 6060`
+You'll need to stop the node you're currently running and restart the node using the following three options including the metrics flag.
+Just change the password section for daemon and docker option, for systemd you'll need to add your password in the environment file.
 
   1. __Daemon__
 ```
