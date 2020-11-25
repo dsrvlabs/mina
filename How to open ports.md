@@ -5,8 +5,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;<img src="https://app.dsrvlabs.com/images/git/img_google01.png"></img>
 
 1. Click the Menu button in the top left corner      
-2-1. Select "VPC network" menu 
-2-2. Select "Firewall" sub menu  
+2. Select "VPC network" menu, Select "Firewall" sub menu  
 
 &nbsp;&nbsp;&nbsp;&nbsp;<img src="https://app.dsrvlabs.com/images/git/img_google02.png">
      
