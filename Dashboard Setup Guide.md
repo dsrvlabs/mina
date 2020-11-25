@@ -80,6 +80,7 @@ docker run -d \
 ## 3. Open ports for prometheus server and node exporter (Firewall settings configuration)
 - TCP Port 6060 (from 101.101.216.236) : mina daemon metrics port
 - TCP Port 9100 (from 101.101.216.236) : node_exporter port
+- If you are not sure how to open firewall settings, please follow the guide here: https://github.com/dsrvlabs/mina/blob/master/How%20to%20open%20ports.md
 
 ## 4. Fill in the google form
 - Link: https://forms.gle/VQPzKvoZpK5jud838
