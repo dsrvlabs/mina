@@ -64,7 +64,7 @@
 
 ### 3. Microsoft Azure
 
-&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://app.dsrvlabs.com/images/git/img_micro01.png">
+&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://app.dsrvlabs.com/images/git/img_micro01">
 
 1. Type "Firewall" in the search bar
 2. Click "Firewall Policies" in the Services Menu
