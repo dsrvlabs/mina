@@ -7,9 +7,11 @@
 1. Click the Menu button in the top left corner  
 2. Select "VPC network" menu & Select "Firewall" sub menu   
 
+
 &nbsp;&nbsp;&nbsp;&nbsp;<img src="https://app.dsrvlabs.com/images/git/img_google02.png">
      
 3. Create a new firewall rule
+
     
 &nbsp;&nbsp;&nbsp;&nbsp;<img src="https://app.dsrvlabs.com/images/git/img_google03.png">
        
@@ -19,7 +21,12 @@
 7. Set the source of the IP range as "101.101.216.236". This is the IP address where we will request the information to your node.  
 8. Check the TCP button and type "6060" for mina metrics and "9100" for node exporter. 
 9. Click the create button and finish your firewall settings.
-    
+
+
+
+<hr/>
+
+
 
 ### 2. Amazon Cloud Services
 
