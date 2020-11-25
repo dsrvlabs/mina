@@ -11,10 +11,13 @@
      
 3. Create a new firewall rule
 
-&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://app.dsrvlabs.com/images/git/img_google03.png">
+&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://app.dsrvlabs.com/images/git/img_google03_1.png">
        
 4. Set your firewall rule name as "mina-dashboard". You can change the name of the firewall at your convenience, just make sure it is recognizable.
 5. Make sure your direction of traffic is set as "Ingress". You node needs to "Listen" to the requests from outside port.   
+
+&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://app.dsrvlabs.com/images/git/img_google03_2.png">
+
 6. Set the targets as "All instances in the network". Alternatively you can choose a typical IP address option and add your public IP address of your node.  
 7. Set the source of the IP range as "101.101.216.236". This is the IP address where we will request the information to your node.  
 8. Check the TCP button and type "6060" for mina metrics and "9100" for node exporter. 
