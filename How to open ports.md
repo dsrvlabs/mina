@@ -47,8 +47,7 @@
 
 7. Go to the "Instances" menu on the left
 8. Click the "Actions" button in the top left corner
-9-1. Select "Security" menu
-9-2. Select "Change security groups" sub menu
+9. Select "Security" menu, Select "Change security groups" sub menu
   
 &nbsp;&nbsp;&nbsp;&nbsp;<img src="https://app.dsrvlabs.com/images/git/img_amazon04.png">
  
