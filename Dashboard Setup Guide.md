@@ -20,7 +20,7 @@ coda daemon -peer-list-file ~/peers.txt \
   -metrics-port 6060
 ```
 
-  2. __Docker__
+  2. __Docker__ (Updated 12/4)
 ```
 sudo docker run --name mina -d \
 -p 8301-8305:8301-8305 \
