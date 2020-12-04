@@ -29,11 +29,12 @@ sudo docker run --name mina -d \
 --mount "type=bind,source=`pwd`/keys,dst=/keys,readonly" \
 --mount "type=bind,source=`pwd`/.coda-config,dst=/root/.coda-config" \
 --mount type=bind,source="`pwd`/peers.txt,dst=/root/peers.txt",readonly \
-minaprotocol/mina-daemon-baked:4.1-turbo-pickles-mina757342b-auto811bf26 daemon \
+-e CODA_PRIVKEY_PASS="YOUR PASSWORD HERE" \
+minaprotocol/mina-daemon-baked:4.1-turbo-pickles-mina9652f8e-autod61d39d6 \
 -peer-list-file /root/peers.txt \
 -block-producer-key /keys/my-wallet \
--block-producer-password "YOUR PASSWORD HERE" \
 -insecure-rest-server \
+-file-log-level Debug \
 -log-level Info \
 -metrics-port 6060
 ```
