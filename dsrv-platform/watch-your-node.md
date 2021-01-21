@@ -68,3 +68,7 @@ daemon \
 - Port : 6060
 
 Reference : https://www.digitalocean.com/docs/networking/firewalls/how-to/configure-rules/
+
+## Contact us
+- Discord : https://discord.com/channels/484437221055922177/779045297745690644
+- E-Mail : platform@dsrvlabs.com 
