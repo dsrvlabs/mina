@@ -4,7 +4,7 @@
 > It will be provided for free to Mina nodes.  
 > Contact(Discord) : https://discord.com/channels/484437221055922177/779045297745690644
 
-![watchyournode_sample2](https://user-images.githubusercontent.com/897510/105396121-ded54000-5c62-11eb-8aaf-b8669d4cca70.png)
+<img src="https://user-images.githubusercontent.com/897510/105396121-ded54000-5c62-11eb-8aaf-b8669d4cca70.png" width="60%">
 
 
 ## Settings
