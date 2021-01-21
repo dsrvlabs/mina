@@ -63,8 +63,8 @@ daemon \
 ## 2. Open the firewall to allow server access
 | Please open the firewall so that the DSRV Platform can collect metrics information.
 
-- DSRV Platform, Server IP Address : 118.67.130.234
-- Port : 6060
+- Server IP Address : 118.67.130.234
+- Port : 6060(tcp)
 
 Reference : https://www.digitalocean.com/docs/networking/firewalls/how-to/configure-rules/
 
