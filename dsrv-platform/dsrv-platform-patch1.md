@@ -23,7 +23,7 @@ ExecStart=/usr/local/bin/mina daemon \
   --log-level Info \
   --file-log-level Info \
   --block-producer-key /root/keys/my-wallet \
-  \$EXTRA_FLAGS
+  $EXTRA_FLAGS
 ExecStop=/usr/local/bin/mina client stop-daemon
 
 [Install]
