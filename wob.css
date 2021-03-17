@@ -1,6 +1,7 @@
 #vt100 #cursor.bright {
-  background-color: white;
-  color:            black;
+  color:            #ffffff;
+  background-color: #000000;
+  opacity:          0.2;
 }
 
 /*#vt100 #cursor.dim {
@@ -18,10 +19,9 @@
 }
 
 #vt100 #scrollable.inverted {
-  color:            #000000;
-  background-color: #ffffff;
+  color:            #ffffff;
+  background-color: #000000;
   opacity:          0.2;
-  -moz-opacity:     0.2;
 }
 */
 #vt100 .ansiDef {
