@@ -2,7 +2,7 @@
 
 As Mina mainnet is updated, you need to execute the command below.
 - Until : Not specified
-- Ref. : https://discord.com/channels/484437221055922177/816099272859844638/829402925469532171
+- Notice : https://discord.com/channels/484437221055922177/816099272859844638/829402925469532171
 
 ```
 systemctl stop mina
